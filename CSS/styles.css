@@ -132,7 +132,7 @@ ul {
 
   color: #ffffff;
   
-  background-color: url(/CSS/Header\img.jpg),
+  /* background-color: url(/images/Header\ img-min.jpg),
    rgba(47, 48, 58, 0.8);
     background-position: center;
   
@@ -141,7 +141,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 646px;
-   text-align: center;
+   text-align: center; */
 }
 .container-hero {
   
@@ -150,6 +150,8 @@ ul {
   background-size: 1600px 600px;
   background-image: url(/images/Header\ img-min.jpg);
  background-repeat: no-repeat;
+ margin-right: auto;
+ margin-left: auto;
   }
   .hero-section {
     text-align: center;
@@ -485,15 +487,19 @@ background-repeat: no-repeat; */
   .button-list {
     display: flex;
     margin-top: 94px;
-    padding-bottom: 16 px;
+    padding-bottom: 16px;
     margin-bottom: 34px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
+  .button-portfolio {
+padding: 6px 22px;
+border-radius: 4px;
+  }
 
-  .button-list :hover,
-  .button-list :focus {
+   .button-portfolio:hover,
+   .button-portfolio:focus {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -504,11 +510,14 @@ background-repeat: no-repeat; */
     display: flex;
 
     flex-wrap: wrap;
+    padding-bottom: 94px;
   }
   .tehnokrak-element {
     margin-right: 30px;
+    margin-bottom: 30px;
 
     width: calc((100% - 60px) / 3);
+    border: 1px solid #EEEEEE;
   }
   .tehnokrak-element:nth-child(3n) {
     margin-right: 0;
@@ -526,6 +535,7 @@ background-repeat: no-repeat; */
     width: 370px;
     height: 294px;
     padding: 63px 24px;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
   }
   .tehnokrak h1 {
     font-weight: bold;
@@ -590,4 +600,28 @@ background-repeat: no-repeat; */
 
 .link-sub {
   color: #ffffff;
+}
+.box {
+  min-width: 30px;
+  height: 30px;
+}
+.box::before {
+content:"";
+  background-image: url(../images/fone.svg);
+   min-width: 10px;
+   height: 15px;
+    fill: black;
+    background-size: contain;
+}
+
+.box::after {
+  content:'';
+  font-size: 30px;
+  color: teal;
+  background-image: url(../images/fone.svg);
+  background-repeat: no-repeat;
+}
+
+.box:hover::before {
+  color: red;
 }
