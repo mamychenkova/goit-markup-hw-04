@@ -117,7 +117,7 @@ ul {
 .mail::before {
   display: inline-block;
   content: '';
-  background-image: url(../images/letter-grey\\1\.svg);
+  background-image: url(../images/letter-grey.svg);
   min-width: 16px;
   height: 11px;
 
@@ -182,7 +182,7 @@ ul {
       rgba(47, 48, 58, 0.6),
       rgba(47, 48, 58, 0.8)
     ),
-    url(../images/Header\img-min.jpg);
+    url(../images/Header.jpg);
   background-repeat: no-repeat;
   margin-right: auto;
   margin-left: auto;
@@ -221,22 +221,21 @@ background-repeat: no-repeat; */
   margin: 0px;
   padding-bottom: 94px;
 
-  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 2px solid rgba(252, 229, 229, 0.4);
 }
 .advantages-section {
   padding-top: 94px;
 }
 .advantages-element {
-  width: calc((100% - 90px) / 4);
+  width: calc((100% - 120px) / 4);
   margin-right: 30px;
 }
-.advantages img {
+.icon {
   background-color: #f5f4fa;
-  width: 270px;
-  height: 120px;
+
   color: #212121;
-  padding: 0px;
-  margin: 0px;
+
+  margin-right: 30px;
 }
 .advantages h3 {
   font-style: normal;
@@ -262,8 +261,8 @@ background-repeat: no-repeat; */
 
   color: #757575;
 }
-.exempleslist img {
-  padding-bottom: -50px;
+.advantages-element:last-child {
+  margin-right: 0px;
 }
 .exempleslist {
   padding: 0;
