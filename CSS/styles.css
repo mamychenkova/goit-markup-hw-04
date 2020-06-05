@@ -210,7 +210,39 @@ background-repeat: no-repeat; */
   font-size: 16px;
   line-height: 30px;
 }
+/* Котики */
+.cats {
+  display: flex;
+}
+.box {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  background-image: url(/images/cat.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 
+  opacity: 1;
+}
+.boxx {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  background-image: url(/images/catok.png);
+  background-size: contain;
+  opacity: 0;
+  background-repeat: no-repeat;
+}
+.boxx:hover {
+  opacity: 1;
+  transition-duration: 1000ms;
+}
+.box:hover {
+  opacity: 0;
+  transition-duration: 1000ms;
+}
+
+/* Преимущества */
 .advantages-heading {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -220,23 +252,29 @@ background-repeat: no-repeat; */
   display: flex;
   margin: 0px;
   padding-bottom: 94px;
-
   border-bottom: 2px solid rgba(252, 229, 229, 0.4);
 }
 .advantages-section {
   padding-top: 94px;
 }
 .advantages-element {
-  width: calc((100% - 120px) / 4);
+  display: block;
+  width: calc((100% - 90px) / 4);
   margin-right: 30px;
+  align-items: center;
+  justify-content: center;
 }
 .icon {
+  display: block;
+  width: 270px;
+  height: 120px;
   background-color: #f5f4fa;
-
-  color: #212121;
-
   margin-right: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
 .advantages h3 {
   font-style: normal;
   font-weight: bold;
@@ -253,7 +291,6 @@ background-repeat: no-repeat; */
   font-size: 14px;
   line-height: 24px;
   /* or 171% */
-  margin-right: 30px;
 
   margin-bottom: 0px;
 
@@ -354,16 +391,26 @@ h2 {
   margin-bottom: 16px;
 }
 .sociallink-list {
-  color: #333333;
+  fill: #333333;
   display: flex;
   align-items: center;
   padding-bottom: 24px;
   justify-content: space-evenly;
+  padding-top: 16px;
 }
-/* .sociallink-element {
-  } */
-.sociallink-list a:hover,
-.sociallink-list a:focus {
+.social a {
+  display: block;
+  justify-content: center;
+}
+.social {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.social:hover,
+.social:focus {
   color: #ffffff;
   background-color: #2196f3;
 }
