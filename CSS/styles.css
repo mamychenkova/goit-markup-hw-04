@@ -258,21 +258,18 @@ background-repeat: no-repeat; */
   padding-top: 94px;
 }
 .advantages-element {
-  display: block;
-  width: calc((100% - 90px) / 4);
+  display: flex;
+  width: 270px;
+  height: 120px;
   margin-right: 30px;
   align-items: center;
   justify-content: center;
+  background-color: #f5f4fa;
 }
 .icon {
   display: block;
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  margin-right: 30px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  width: 70px;
+  height: 70px;
 }
 
 .advantages h3 {
@@ -293,6 +290,7 @@ background-repeat: no-repeat; */
   /* or 171% */
 
   margin-bottom: 0px;
+  margin-right: 30px;
 
   letter-spacing: 0.03em;
 
@@ -399,7 +397,7 @@ h2 {
   padding-top: 16px;
 }
 .social a {
-  display: block;
+  display: flex;
   justify-content: center;
 }
 .social {
@@ -420,19 +418,20 @@ h2 {
   justify-content: center;
   height: 90px;
 }
-.client :hover,
-.client :focus {
+.element-client a:hover,
+.element-client a:focus {
   color: #2196f3;
 }
-.element-client {
-  width: 175px;
+.element-client a {
+  display: flex;
+  width: 170px;
   height: 90px;
   border-radius: 6px;
-  text-align: center;
-
+  align-items: center;
+  justify-content: center;
+  color: #333333;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
-  border-radius: 4px;
   margin-right: 30px;
 }
 
