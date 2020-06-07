@@ -110,14 +110,14 @@ ul {
   margin-right: -20px;
   align-items: center;
 }
-.fone:hover::before,
+
 .fone:hover::before {
   fill: #2196f3;
 }
 .mail::before {
   display: inline-block;
   content: '';
-  background-image: url(../images/letter-grey.svg);
+  background-image: url(../images/letter.svg);
   min-width: 16px;
   height: 11px;
 
@@ -213,7 +213,11 @@ background-repeat: no-repeat; */
 /* Котики */
 .cats {
   display: flex;
+  font-family: Raleway;
+  color: #757575;
+  font: bold;
 }
+
 .box {
   position: relative;
   width: 200px;
@@ -224,6 +228,7 @@ background-repeat: no-repeat; */
 
   opacity: 1;
 }
+
 .boxx {
   position: absolute;
   width: 200px;
@@ -232,6 +237,7 @@ background-repeat: no-repeat; */
   background-size: contain;
   opacity: 0;
   background-repeat: no-repeat;
+  text-align: end;
 }
 .boxx:hover {
   opacity: 1;
@@ -268,8 +274,6 @@ background-repeat: no-repeat; */
 }
 .icon {
   display: block;
-  width: 70px;
-  height: 70px;
 }
 
 .advantages h3 {
@@ -300,6 +304,7 @@ background-repeat: no-repeat; */
   margin-right: 0px;
 }
 .exempleslist {
+  position: relative;
   padding: 0;
   margin: 0px;
   display: flex;
@@ -307,7 +312,6 @@ background-repeat: no-repeat; */
 .element-list {
   padding: 0px;
   margin-right: 0px;
-
   width: calc((100% - 60px) / 3);
 }
 .work-examples {
@@ -326,6 +330,8 @@ h2 {
 }
 
 .examples-text {
+  position: absolute;
+  bottom: 0px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -338,7 +344,6 @@ h2 {
   width: 370px;
   height: 70px;
   margin: 0px;
-
   padding: 30px;
 }
 .team-section {
@@ -364,6 +369,8 @@ h2 {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
 }
 .team-list-person:last-child {
   margin-right: 0px;
@@ -388,39 +395,58 @@ h2 {
 
   margin-bottom: 16px;
 }
+/* .s {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+} */
 .sociallink-list {
-  fill: #333333;
   display: flex;
   align-items: center;
   padding-bottom: 24px;
   justify-content: space-evenly;
   padding-top: 16px;
 }
-.social a {
+.sociallink-element {
   display: flex;
+  align-items: center;
   justify-content: center;
-}
-.social {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
+}
+.s {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-.social:hover,
-.social:focus {
-  color: #ffffff;
+.social {
+  fill: #afb1b8;
+  display: block;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+.sociallink-element:hover .social,
+.sociallink-element:focus .social {
+  fill: #ffffff;
   background-color: #2196f3;
+  border-radius: 50%;
+}
+.klient-link {
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
 }
 .client {
-  color: #333333;
   display: flex;
   justify-content: center;
   height: 90px;
 }
-.element-client a:hover,
-.element-client a:focus {
-  color: #2196f3;
+.klient-link:hover,
+.klient-link:focus {
+  border: 1px solid #2196f3;
+  fill: #2196f3;
 }
 .element-client a {
   display: flex;
@@ -429,8 +455,7 @@ h2 {
   border-radius: 6px;
   align-items: center;
   justify-content: center;
-  color: #333333;
-  border: 1px solid #afb1b8;
+
   box-sizing: border-box;
   margin-right: 30px;
 }
@@ -452,9 +477,7 @@ h2 {
   padding-bottom: 28px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
-.sociallink-end {
-  display: flex;
-}
+
 .adress-container {
   margin-right: 140px;
 }
@@ -505,14 +528,28 @@ h2 {
   color: rgba(255, 255, 255, 0.6);
 }
 .sociallink-end {
+  display: flex;
   color: rgba(255, 255, 255, 0.1);
   margin-top: 16px;
 }
 .sociallink-end-element {
   margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.sociallink-end:hover {
-  color: #2196f3;
+.link-end {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.link-end:hover {
+  background-color: #2196f3;
+}
+.link-end:hover .social {
+  fill: #ffffff;
 }
 .end {
   font-size: 12px;
