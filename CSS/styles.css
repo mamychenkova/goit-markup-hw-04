@@ -141,7 +141,7 @@ ul {
 
 .container {
   width: 1200px;
-  outline: 2px solid red;
+
   margin-right: auto;
   margin-left: auto;
 
@@ -210,44 +210,6 @@ background-repeat: no-repeat; */
   font-size: 16px;
   line-height: 30px;
 }
-/* Котики */
-.cats {
-  display: flex;
-  font-family: Raleway;
-  color: #757575;
-  font: bold;
-}
-
-.box {
-  position: relative;
-  width: 200px;
-  height: 250px;
-  background-image: url(/images/cat.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-
-  opacity: 1;
-}
-
-.boxx {
-  position: absolute;
-  width: 200px;
-  height: 250px;
-  background-image: url(/images/catok.png);
-  background-size: contain;
-  opacity: 0;
-  background-repeat: no-repeat;
-  text-align: end;
-}
-.boxx:hover {
-  opacity: 1;
-  transition-duration: 1000ms;
-}
-.box:hover {
-  opacity: 0;
-  transition-duration: 1000ms;
-}
-
 /* Преимущества */
 .advantages-heading {
   margin-top: 0px;
